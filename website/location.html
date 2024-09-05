@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijayawada Info</title>
+    <link rel="stylesheet" href="styles(loc).css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For Graphs -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">RAG</div>
+        <div class="nav-right">
+            <button>Home</button>
+            <button>Map</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1 class="main-heading">Vijayawada</h1>
+        
+        <!-- Table -->
+        <table class="info-table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>No. of People</th>
+                    <th>Radius (km)</th>
+                    <th>Time</th>
+                    <th>Area</th>
+                    <th>Pictures</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Flood</td>
+                    <td>1500</td>
+                    <td>5</td>
+                    <td>10:00 AM</td>
+                    <td>Krishna District</td>
+                    <td class="pictures">
+                        <span class="toggle-pics">></span>
+                        <div class="pictures-list">
+                            <img src="pic1.jpg" alt="Flood Image 1">
+                            <img src="pic2.jpg" alt="Flood Image 2">
+                        </div>
+                    </td>
+                </tr>
+                <!-- More rows as needed -->
+            </tbody>
+        </table>
+
+        <!-- Regional Update Section -->
+        <h2 class="regional-update-heading">Regional Update</h2>
+        <div class="tile-container">
+            <!-- Tile 1 with New/Latest Tag -->
+            <div class="tile">
+                <span class="new-tag">New/Latest</span>
+                <h3>Location</h3>
+                <p>Disaster</p>
+                <a href="#">Read more</a>
+            </div>
+            <!-- Tile 2 -->
+            <div class="tile">
+                <h3>Location</h3>
+                <p>Disaster</p>
+                <a href="#">Read more</a>
+            </div>
+            <!-- Tile 3 -->
+            <div class="tile">
+                <h3>Location</h3>
+                <p>Disaster</p>
+                <a href="#">Read more</a>
+            </div>
+            <!-- Add more tiles as needed -->
+        </div>
+
+        <!-- Police Station and Task Force Information -->
+        <div class="info-section">
+            <h2>Regional Police Station and Local Task Force</h2>
+            <table class="task-force-table">
+                <thead>
+                    <tr>
+                        <th>Station Name</th>
+                        <th>Contact</th>
+                        <th>Task Force</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vijayawada Police Station</td>
+                        <td>123-456-789</td>
+                        <td>Flood Response Team</td>
+                    </tr>
+                    <tr>
+                        <td>Krishna District Station</td>
+                        <td>987-654-321</td>
+                        <td>Evacuation Force</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
