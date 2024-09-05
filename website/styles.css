@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d1130;
+    color: white;
+    padding: 10px 20px;
+}
+
+.nav-left {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-right {
+    display: flex;
+}
+
+.nav-btn {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #cc7a00;
+}
+/* test*/
+.header {
+    position: relative;
+    margin-top: 0px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: slide-animation 12s infinite;
+}
+
+.slide:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.slide:nth-child(3) {
+    animation-delay: 8s;
+}
+
+@keyframes slide-animation {
+    0% {opacity: 0;}
+    25% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+/*    test*/
+
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.search-bar {
+    position: relative;
+    width: 40%;
+    margin: 10px;
+}
+
+.search-bar input, .search-bar select {
+    width: 100%;
+    padding: 12px;
+    padding-left: 40px; /* Space for the icon */
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+}
+
+.search-bar i {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    font-size: 20px;
+    color: #999;
+}
+
+.location-search {
+    position: relative;
+    width: 40%;
+}
+
+.location-search select {
+    appearance: none;
+    background-color: white;
+    padding-right: 40px;
+}
+
+.tile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.tile {
+    width: 70%;
+    background-color: #eee;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.tile:hover {
+    transform: translateY(-10px);
+}
+
+.tile h3 {
+    margin-bottom: 10px;
+}
+
+.tile a {
+    color: #ff9900;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #232f3e;
+    color: white;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    width: 200px;
+}
+
+.footer-section select {
+    padding: 10px;
+}
+
+
+/*code for footer*/
+footer {
+    background-color: #0d1130;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+.footer-top {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.back-to-top {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color:#304053 ;
+    
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+    
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer-countries {
+    margin-bottom: 10px;
+}
+
+.footer-countries a,
+.footer-legal a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-countries a {
+    margin: 0 5px;
+}
+
+.footer-legal a {
+    margin: 0 10px;
+}
